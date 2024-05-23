@@ -10,7 +10,7 @@ This project implements a RESTful API to manage and sanitize sensitive words usi
 
 ## Requirements
 
-- .NET 5.0 SDK
+- .NET SDK
 - SQL Server
 
 ## Getting Started
