@@ -145,6 +145,25 @@ Each endpoint accepts and returns JSON data. The request and response formats ar
 
 
 
+### SQL Database Setup
+
+To set up the SQL database, you can use the provided SQL script to create the necessary schema and tables.
+
+1. Create a new database in SQL Server.
+2. Run the following SQL script to create the `SensitiveWords` table:
+
+```sql
+CREATE DATABASE SensitiveWordsSanitizer;
+
+USE SensitiveWordsSanitizer;
+
+CREATE TABLE SensitiveWords (
+    Id INT IDENTITY(1,1) PRIMARY KEY,
+    Word NVARCHAR(100) NOT NULL
+);
+
+
+
 
 
 
